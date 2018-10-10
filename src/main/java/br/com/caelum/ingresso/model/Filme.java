@@ -30,9 +30,6 @@ public class Filme {
 
     }
     
-    public void setDuracao(Duration duracao) {
-		this.duracao = duracao;
-	}
 
 	public Filme(String nome, Duration duracao, String genero, BigDecimal preco) {
 		this.nome = nome;
