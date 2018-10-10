@@ -20,6 +20,7 @@ import br.com.caelum.ingresso.dao.FilmeDao;
 import br.com.caelum.ingresso.dao.SessaoDao;
 import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Sessao;
+import br.com.caelum.ingresso.rest.OmdbClient;
 
 /**
  * Created by nando on 03/03/17.
@@ -37,6 +38,10 @@ public class FilmeController {
     	modelAndView.addObject("filmes",filmeDao.findAll());
     	return modelAndView;
     }
+    
+    @Autowired
+    private OmdbClient client;
+    
     
     @Autowired
     private SessaoDao sessaoDao;
