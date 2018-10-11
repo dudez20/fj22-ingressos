@@ -25,7 +25,7 @@ public class Sala {
 	@OneToMany(fetch = FetchType.EAGER)
 	private List<Lugar> lugares = new ArrayList<>();
 
-	private BigDecimal preco; /*= BigDecimal.ZERO;*/
+	private BigDecimal preco = BigDecimal.ZERO;
 
 	public BigDecimal getPreco() {
 		return preco.setScale(2, RoundingMode.HALF_UP);
